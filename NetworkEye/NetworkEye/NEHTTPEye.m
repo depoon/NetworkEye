@@ -75,6 +75,10 @@
     if ([NSURLProtocol propertyForKey:@"NEHTTPEye" inRequest:request] ) {
         return NO;
     }
+    
+    
+    
+    NSLog(@"**eye eye see %@ httpmethod: %@", [[request URL] absoluteString], request.HTTPMethod);
     return YES;
 }
 
